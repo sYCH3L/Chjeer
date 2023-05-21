@@ -12,7 +12,8 @@
   import Settings from "views/admin/Settings.svelte";
   import Tables from "views/admin/Tables.svelte";
   import Maps from "views/admin/Maps.svelte";
-  import Income from "views/admin/Income.svelte";
+  import Statement from "views/admin/Statement.svelte";
+  import Balance from "views/admin/Balance.svelte";
 
   export let location;
   export let admin = "";
@@ -29,7 +30,8 @@
         <Route path="settings" component="{Settings}" />
         <Route path="tables" component="{Tables}" />
         <Route path="maps" component="{Maps}" />
-        <Route path="income" component="{Income}" />
+        <Route path="Statement" component="{Statement}" />
+        <Route path="Balance" component="{Balance}" />
       </Router>
       <FooterAdmin />
     </div>

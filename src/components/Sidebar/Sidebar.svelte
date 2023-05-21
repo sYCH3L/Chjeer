@@ -108,46 +108,55 @@
             Dashboard
           </a>
         </li>
-
         <li class="items-center">
+          <a
+            use:link
+            href="/admin/Statement"
+            class="text-xs uppercase py-3 font-bold block {location.href.indexOf('/admin/Statement') !== -1 ? 'text-red-500 hover:text-red-600':'text-blueGray-700 hover:text-blueGray-500'}"
+          >
+            <i
+              class="fas fa-money-check mr-2 text-sm {location.href.indexOf('/admin/Statement') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
+            ></i>
+              Income
+          </a>
+        </li>
+        <li class="items-center">
+          <a
+            use:link
+            href="/admin/Balance"
+            class="text-xs uppercase py-3 font-bold block {location.href.indexOf('/admin/Balance') !== -1 ? 'text-red-500 hover:text-red-600':'text-blueGray-700 hover:text-blueGray-500'}"
+          >
+            <i
+              class="fas fa-balance-scale-right mr-2 text-sm {location.href.indexOf('/admin/Balance') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
+            ></i>
+              Balance Sheet
+          </a>
+        </li>
+      </ul>
+            <!-- Divider -->
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+      <h6
+        class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+      >
+        Account
+      </h6>
+      <!-- Navigation -->
+       <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+               <li class="items-center">
           <a
             use:link
             href="/admin/settings"
             class="text-xs uppercase py-3 font-bold block {location.href.indexOf('/admin/settings') !== -1 ? 'text-red-500 hover:text-red-600':'text-blueGray-700 hover:text-blueGray-500'}"
           >
             <i
-              class="fas fa-tools mr-2 text-sm {location.href.indexOf('/admin/settings') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
+              class="fas fa-tools mr-3 text-sm {location.href.indexOf('/admin/settings') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
             ></i>
             Settings
           </a>
         </li>
-
-        <li class="items-center">
-          <a
-            use:link
-            href="/admin/income"
-            class="text-xs uppercase py-3 font-bold block {location.href.indexOf('/admin/income') !== -1 ? 'text-red-500 hover:text-red-600':'text-blueGray-700 hover:text-blueGray-500'}"
-          >
-            <i
-              class="fas fa-table mr-2 text-sm {location.href.indexOf('/admin/income') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
-            ></i>
-            Income
-          </a>
-        </li>
-
-        <li class="items-center">
-          <a
-            use:link
-            href="/admin/maps"
-            class="text-xs uppercase py-3 font-bold block {location.href.indexOf('/admin/maps') !== -1 ? 'text-red-500 hover:text-red-600':'text-blueGray-700 hover:text-blueGray-500'}"
-          >
-            <i
-              class="fas fa-map-marked mr-2 text-sm {location.href.indexOf('/admin/maps') !== -1 ? 'opacity-75' : 'text-blueGray-300'}"
-            ></i>
-            Maps
-          </a>
-        </li>
-      </ul>
+       </ul>
+      
     </div>
   </div>
 </nav>
