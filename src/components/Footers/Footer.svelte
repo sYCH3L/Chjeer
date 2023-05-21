@@ -153,7 +153,7 @@
             href="https://www.creative-tim.com?ref=ns-footer"
             class="text-blueGray-500 hover:text-blueGray-800"
           >
-            Creative Tim
+            Quaestuary
           </a>
           .
         </div>

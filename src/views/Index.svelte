@@ -25,19 +25,10 @@
     <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
       <div class="pt-32 sm:pt-0">
         <h2 class="font-semibold text-4xl text-blueGray-600">
-          Notus Svelte - A beautiful extension for Tailwind CSS.
+          Quaestuary
         </h2>
         <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-          Notus Svelte is Free and Open Source. It does not change any of the CSS from
-          <a
-            href="https://tailwindcss.com/?ref=creativetim"
-            class="text-blueGray-600"
-            target="_blank"
-          >
-            Tailwind CSS.
-          </a>
-          It features multiple HTML elements and it comes with dynamic
-          components for ReactJS, Vue and Angular.
+         Quaestuary is a personal finance app for managing, tracking and growing your assets
         </p>
         <div class="mt-12">
           <a
@@ -52,7 +43,7 @@
             class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             target="_blank"
           >
-            Github Star
+            Read more
           </a>
         </div>
       </div>
