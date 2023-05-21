@@ -6,6 +6,7 @@
   import CardSocialTraffic from "components/Cards/CardSocialTraffic.svelte";
   import CardRevenue from "components/Cards/CardRevenue.svelte";
   import CardExpense from "components/Cards/CardExpense.svelte";
+  import CardProfit from "components/Cards/CardProfits.svelte";
   export let location;
   
 </script>
@@ -15,15 +16,11 @@
     <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
       <CardRevenue />
     </div>
-    <div class="w-full xl:w-4/12 px-4">
-    </div>
   </div>
   <div class="flex flex-wrap mt-4">
     <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-      <CardExpense />
-    </div>
-    <div class="w-full xl:w-4/12 px-4">
-      
+      <CardExpense /> 
     </div>
   </div>
+  
 </div>

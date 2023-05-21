@@ -14,6 +14,8 @@
   import Maps from "views/admin/Maps.svelte";
   import Statement from "views/admin/Statement.svelte";
   import Balance from "views/admin/Balance.svelte";
+  import test from "views/admin/test.svelte";
+
 
   export let location;
   export let admin = "";
@@ -32,6 +34,7 @@
         <Route path="maps" component="{Maps}" />
         <Route path="Statement" component="{Statement}" />
         <Route path="Balance" component="{Balance}" />
+        <Route path="test" component="{test}" />
       </Router>
       <FooterAdmin />
     </div>

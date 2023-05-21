@@ -1,7 +1,3 @@
-
-<script>
-</script>
-
 <div
   class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
 >
@@ -9,7 +5,7 @@
     <div class="flex flex-wrap items-center">
       <div class="relative w-full px-4 max-w-full flex-grow flex-1">
         <h3 class="font-semibold text-base text-blueGray-700">
-          Expenses
+          Profits
         </h3>
       </div>
       <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
@@ -37,7 +33,7 @@
           >
             $
           </th>
-                    <th
+          <th
             class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
           >
             
@@ -56,7 +52,7 @@
           >
             4,569
           </td>
-                              <td
+                    <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
           >
                     <button
@@ -84,7 +80,7 @@
           >
             3,985
           </td>
-                                        <td
+                    <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
           >
                     <button
@@ -101,8 +97,7 @@
         </button>
           </td>
         </tr>
-        <tr>
-        <thead>
+            <thead>
         <tr>
           <th
             class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
@@ -120,19 +115,23 @@
             
           </th>
         </tr>
-                <tr>
+      </thead>
+              <tr>
           <th
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
           >
-            Total Expenses
+            Gross Profit
           </th>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
           >
             4,569
           </td>
+                    <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+          >
+          </td>
         </tr>
-      </thead>
       </tbody>
     </table>
   </div>
