@@ -8,7 +8,7 @@
     Entries: [{
         id: 0,
         Titles: [],
-        Data: ["Work","4,700",""]
+        Data: ["Work","4,700"]
     }]
     
 }];
