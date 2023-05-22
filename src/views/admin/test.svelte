@@ -16,11 +16,11 @@
 
 </script>
 
-
+<RemoveItemModal>
 <div>
   <div class="flex flex-wrap">
     <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-      <CardFinanceTable TableName="TestData" Data={Data} RemoveItemModal={RemoveItemModal}/>
+      <CardFinanceTable TableName="TestData" Data={Data} RemoveItemModal={RemoveItemModal.toggleModal()}/>
     </div>
   </div>
 </div>
