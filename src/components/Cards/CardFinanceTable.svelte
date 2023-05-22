@@ -44,16 +44,16 @@ export let Data;
       <tbody> 
       <tr>
         {#each Data as d}
-            {#each d.Entries as entry}
+            {#each d.Entries as entry} 
                 {#each entry.Data as d,i}
-                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">{d}</th>
+                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">{d}</th>
                     {#if i == d.length - 1}
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                    <!-- Todo: Add capability to edit, remove items -->
-                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><i class="fas fa-pen"></i></button>
-                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><i class="fas fa-ban"></i></button>
-                    </td>
-                {/if}
+                      {console.log("inside")}
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-pen"></i></button>
+                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-ban"></i></button>
+                      </td>
+                    {/if}
                 {/each}
             {/each}
         {/each}
