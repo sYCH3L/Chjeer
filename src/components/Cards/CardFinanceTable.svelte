@@ -2,12 +2,11 @@
 
 export let TableName;
 export let Data;
+export let EditItem;
+export let RemoveItem;
+export let AppendItem;
 
 let last = (a, i) => i == a.length - 1;
-
-function handleClick() {
-   console.log("hurray")
-}
 
 </script>
 <!--
@@ -29,7 +28,7 @@ function handleClick() {
         </h3>
       </div>
       <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+        <button on:click={() => AppendItem()} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
           <i class="fas fa-plus-circle"></i>
         </button>
       </div>
@@ -55,8 +54,8 @@ function handleClick() {
                     <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">{x}</th>
                     {#if last(entry.Data,i)}
                       <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                        <button on:click={() => handleClick()} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-pen"></i></button>
-                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-ban"></i></button>
+                        <button on:click={() => EditItem(entry.id)} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-pen"></i></button>
+                        <button on:click={() => RemoveItem(entry.id)} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" ><i class="fas fa-ban"></i></button>
                       </td>
                     {/if}
                 {/each}
