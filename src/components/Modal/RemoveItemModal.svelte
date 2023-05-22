@@ -6,8 +6,26 @@ function toggleModal(){
   showModal = !showModal;
 }
 
+export const modal = {
+    toggle() {
+      show = !show
+    },
+    show() {
+      show = true
+      console.log("sob--: show -> show", show)
+    },
+    hide() {
+      show = false
+      console.log("sob--: hide -> show", show)
+    },
+    showHide(isShow) {
+      isShow ? (show = true) : (show = false)
+      console.log("sob--: showHide -> isShow", isShow)
+    },
+  }
+
 </script>
-{#if showModal}
+{#if !modal.show}
 <div class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
   <div class="relative w-auto my-6 mx-auto max-w-6xl">
     <!--content-->
@@ -17,7 +35,7 @@ function toggleModal(){
         <h3 class="text-3xl font-semibold">
           Modal Title
         </h3>
-        <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" on:click={toggleModal}>
+        <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" on:click={() => modal.toggle()}>
           <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
             ×
           </span>
@@ -35,10 +53,10 @@ function toggleModal(){
       </div>
       <!--footer-->
       <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-        <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" on:click={toggleModal}>
+        <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" on:click={() => modal.toggle()}>
           Close
         </button>
-        <button class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" on:click={toggleModal}>
+        <button class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" on:click={() => madel.toggle()}>
           Save Changes
         </button>
       </div>
