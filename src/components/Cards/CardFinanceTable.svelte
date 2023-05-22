@@ -6,7 +6,7 @@ export let Data;
 let last = (a, i) => i == a.length - 1;
 
 function handleClick() {
-  
+   console.log("hurray")
 }
 
 </script>
