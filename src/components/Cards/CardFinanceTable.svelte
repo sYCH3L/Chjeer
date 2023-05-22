@@ -2,7 +2,7 @@
 
 export let TableName;
 export let Data;
-export let toggleModal;
+export let showAddItem;
 
 let last = (a, i) => i == a.length - 1;
 
@@ -29,7 +29,7 @@ function dummy(id) {
         </h3>
       </div>
       <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-        <button on:click={toggleModal} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+        <button on:click={showAddItem} class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
           <i class="fas fa-plus-circle"></i>
         </button>
       </div>
