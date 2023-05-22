@@ -5,6 +5,7 @@ export let Data;
 export let EditItem;
 export let RemoveItem;
 export let AppendItem;
+export let RemoveItemModal;
 
 let last = (a, i) => i == a.length - 1;
 
