@@ -8,17 +8,18 @@
     Entries: [{
         id: 0,
         Titles: [],
-        Data: ["Work","4,700","Special"]
+        Data: ["Work","4,700"]
     }]
     
 }];
+
 </script>
 
 
 <div>
   <div class="flex flex-wrap">
     <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-      <CardFinanceTable TableName="TestData" Data={Data}/>
+      <CardFinanceTable TableName="TestData" Data={Data} />
     </div>
   </div>
 </div>
