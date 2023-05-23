@@ -10,6 +10,5 @@
 
 </script>
 <Modal bind:showModal>
-	<p slot="accept-button-name"> sugu	</p>
-  <p slot="body">olen peeter paan ja nikun sigu </p>
+
 </Modal>
